@@ -1,0 +1,387 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+.head
+{
+    background-image: url(background.png);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+.logo
+{
+    cursor: pointer;
+    height: 100px;
+    width: 140px;
+    margin-left: 50px;
+   
+}
+.navbar
+{
+    width: 85%;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+button{
+    color:#fbfcfd;
+    padding:10px 25px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.content 
+{  position: absolute;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    
+}
+.sidebar
+{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    top:0;
+    right: 0;;
+}
+.social-link img, .useful-link img{
+    width: 25px;
+margin: 5px auto;
+cursor: pointer;
+
+}
+.menu
+{
+    display: block;
+    width: 25px;
+    margin:40px auto 0;
+    cursor: pointer;
+  
+}
+.social-link
+{
+    position: absolute;
+    width: 50px;
+    top:50%;
+    transform:translateY(-50%);
+    text-align: center;
+}
+.useful-link
+{
+    position: absolute;
+    bottom:30px;
+    width: 50px;
+    text-align: center;
+}
+.bubbles img
+{
+    width: 50px;
+    animation: sample 7s linear infinite;
+}
+.bubbles
+{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   bottom:0
+
+}
+@keyframes sample
+ {
+    0%
+    {
+        transform:translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translateY(-90vh);
+    }
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 1.5s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(3)
+{
+    animation-delay: 2s;
+    width: 35px;
+}
+
+.bubbles img:nth-child(4)
+{
+    animation-delay: 3s;
+    width: 40px;
+}
+
+.bubbles img:nth-child(5)
+{
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 7s;
+    width: 20px;
+}
+  
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding:10px 25px;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    color:chartreuse
+
+}
+
+.content h1{
+    color:red;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.sidebar
+{
+    width:50px;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    right: 0;top:0;
+    height: 100%;
+}
+.sidebar .menu
+{
+    position: absolute;
+    top:30px;
+}
+.useful-link
+{
+    bottom:20px;
+    position: absolute;
+}
+.social-link
+{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+.sidebar img{
+    width: 25px;
+    padding-left: 10px;
+}
+.bubbles img{
+    width: 50px;
+    
+}
+.bubbles
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: sample 7s linear infinite;
+}
+
+@keyframes sample
+ {
+    
+    0%
+    {
+        transform:translateY(0);
+        opacity: 0;
+        
+    }
+    45%{
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translateY(-90vh);
+    }
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 1.5s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(3)
+{
+    animation-delay: 2s;
+    width: 35px;
+}
+
+.bubbles img:nth-child(4)
+{
+    animation-delay: 3s;
+    width: 40px;
+}
+
+.bubbles img:nth-child(5)
+{
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 7s;
+    width: 20px;
+}
+
+@keyframes name {
+    
+    0%
+    {
+        
+        opacity: 0
+    }
+    50%{
+        opacity: 1;
+        color:rgb(247, 6, 6);
+    }
+    
+} 
+
+ /*potrait */
+@media screen and (max-width:450px)
+{
+    .head{
+        background-image: url("https://wallpapercave.com/wp/wp868040.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        width: 100%;
+    } 
+    .content h1
+    {
+        color:white;
+        font-size: 60px;
+    }
+    .sign{
+       
+    border: 1px solid white;
+    padding:5px;
+     border-radius: 5px;
+    cursor: pointer;
+    color:chartreuse
+    }
+    .sidebar
+{
+    position: absolute;
+    bottom: 0;
+    height:50px;
+    top:auto;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    width: 100%;
+    
+}
+.sidebar .menu
+{
+    position: absolute;
+    top:15px;
+    left: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.useful-link
+{
+    
+    position: absolute;
+    right: 5px;
+    top:10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.social-link
+{
+    position: absolute;
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sidebar img{
+    width: 25px;
+    padding-left: 10px;
+}
+}
+ /*tablet */
+@media screen and (max-width:900px) and (min-width:600px)
+{
+    .content h1
+{
+    color:navy;
+    font-size: 60px;
+}
+.head{
+    background-image: url("https://plus.unsplash.com/premium_photo-1670148434532-5d4f1d183060?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdhdGVyfGVufDB8fDB8fHww");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+} 
+.sign{
+   
+border: 1px solid white;
+padding:5px;
+ border-radius: 5px;
+cursor: pointer;
+
+}
+button{
+    background-color: aqua;
+    color: black;
+}
+}
